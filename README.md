@@ -1,11 +1,11 @@
 # DevOps Assignment – System Setup and Automation
 
-## 📌 Introduction
-This project demonstrates the setup of a secure and monitored development environment. It includes system monitoring, user management, and automated backup configuration.
+## Introduction
+The project demonstrates the setup of a secure and monitored development environment which includes system monitoring, user management, and automated backup configuration.
 
 ---
 
-## ✅ Task 1: System Monitoring Setup
+## Task 1: System Monitoring Setup
 
 ### Tools Used:
 - htop
@@ -34,7 +34,7 @@ Stored at:
 
 ---
 
-## ✅ Task 2: User Management and Access Control
+## Task 2: User Management and Access Control
 
 ### Users Created:
 - sarah
@@ -63,7 +63,7 @@ sudo chage -M 30 mike
 
 ---
 
-## ✅ Task 3: Backup Configuration
+## Task 3: Backup Configuration
 
 ### Backup Directories:
 - /backups/
@@ -97,16 +97,7 @@ crontab -e
 0 0 * * 2 tar -czvf /backups/apache_backup_$(date +%F).tar.gz /etc/httpd /var/www/html
 0 0 * * 2 tar -czvf /backups/nginx_backup_$(date +%F).tar.gz /etc/nginx /usr/share/nginx/html
 
-
 ---
 
-## ⚠️ Challenges Faced:
-- Forgot Linux password → Reset using root
-- Permission denied while accessing directories
-- Typo errors in commands (chmod, tar flags)
-- Missing Apache/Nginx directories in WSL
-
----
-
-## ✅ Conclusion
+## Conclusion
 Successfully implemented monitoring, secure user management, and automated backups. This project helped understand real-world DevOps practices.
